@@ -1,0 +1,137 @@
+/* Configuración global de la página */
+:root {
+  /* Fuente base del sitio */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* Espaciado entre líneas para mejor lectura */
+  line-height: 1.6;
+
+  /* Grosor normal del texto */
+  font-weight: 400;
+
+  /* Permite modo claro y oscuro según el sistema */
+  color-scheme: light dark;
+
+  /* Color de fondo principal (azul celeste) */
+  background-color: #e0f2ff;
+
+  /* Color del texto */
+  color: #0f172a;
+
+  /* Mejora la visualización del texto */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Evita problemas de tamaño en los elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+}
+
+/* Contenedor principal donde se monta React */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+/* Estilos para títulos */
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: #0c4a6e;
+}
+
+/* Estilos para párrafos */
+p {
+  margin: 0.5em 0;
+}
+
+/* Estilos para enlaces */
+a {
+  font-weight: 500;
+  color: #0284c7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para botones */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0284c7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.15s;
+}
+
+button:hover {
+  background-color: #0369a1;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Ajustes para imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos del pie de página */
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #bae6fd;
+  text-align: center;
+  color: #075985;
+}
+
+/* Ajustes para figure */
+figure {
+  margin: 0;
+}
+
+/* Texto descriptivo debajo de imágenes */
+figcaption {
+  font-size: 0.9rem;
+  color: #0369a1;
+  margin-top: 0.5rem;
+}
+
+/* Modo oscuro (azul celeste oscuro) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #0f172a;
+    color: #e0f2ff;
+  }
+
+  footer {
+    border-top: 1px solid #1e40af;
+  }
+
+  figcaption {
+    color: #7dd3fc;
+  }
+}
